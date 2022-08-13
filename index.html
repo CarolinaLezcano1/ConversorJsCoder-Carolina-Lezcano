@@ -4,12 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./style.css"> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Kadwa&family=Merriweather&family=Russo+One&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kadwa&family=Merriweather&family=Russo+One&display=swap" rel="stylesheet">
     <title>Casa de Cambio</title>
 </head>
 <body>
-    <button id="btn">Obtener  de cambio</button>
+    <div class="caja">
+        <header>Conversor de Divisas</header>
+        <form action="#">
+            <div class="monto">
+                <p>Ingrese monto a convertir</p>
+                <input type="text" value="" id="montoAConvertir">
+                <div class="lista-de-monedas">
+                    <div class="de">
+                        <p>Convertir De:</p>
+                        <select name="monedasDe" id="convertirDe">
+                            <option value="peso">Peso</option>
+                            <option value="dolar">Dolar</option>
+                            <option value="euro">Euro</option>
+                            <option value="real">Real</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="lista-de-monedas">
+                    <div class="a">
+                        <p>A:</p>
+                        <select name="monedasA" id="convertirA">
+                            <option value="peso">Peso</option>
+                            <option value="dolar">Dolar</option>
+                            <option value="euro">Euro</option>
+                            <option value="real">Real</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- <div>
+                <input type="text" name="resultado" value="" id="montoConvertido">
+            </div> -->
+            <button id="btn">Obtener el tipo de cambio</button>
+        </form>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
