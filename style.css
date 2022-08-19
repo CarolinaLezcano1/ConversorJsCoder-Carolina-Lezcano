@@ -1,73 +1,129 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Kadwa', serif;
-}
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Kadwa', serif;
+}
+
+.label img{
+    max-width:48px;
+
+    }
+    
+    .card{
+        max-width:50%;}
+
+        
+.card2 {
+    width: 300px;
+    padding: 1.9rem 1.2rem;
+    text-align: center;
+    background: pink;
+}
+
+/*Inputs*/
+.field2 {
+    margin-top: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    background-color: white;
+    border-radius: 4px;
+    padding: .5em 1em;
+}
+
+.input-icon2 {
+    height: 1em;
+    width: 1em;
+    fill: black;
+}
+
+.input-field2 {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: black;
+}
+
+/*Text*/
+.title2 {
+    margin-bottom: 1rem;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: black;
+}
+
+/*Buttons*/
+.btn2 {
+    margin: 1rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: .8em;
+    text-transform: uppercase;
+    padding: 0.6em 1.2em;
+    background-color: rgba(236, 119, 236, 0.574);
+    color: #5e6681;
+    transition: all .3s ease-in-out;
+}
+
+
+/*Hover & focus*/
+.field2 input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.btn2:hover {
+    background-color: #7f5e81;
+    color: white;
+    box-shadow: 0 8px 24px 0 rgba(112, 16, 91, 0.2);
+}
+
+
+.noMostrar{
+    display: none;
+}
+
+.form2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    align-items: center;
+    flex-direction: column;
+}
+
+#monto{
+    width: 100%;
+    font-size: 25px;
 }
 
 .caja{
-    width: 370px;
-    padding: 30px;
-    border-radius: 7px;
-    background: rgba(238, 130, 238, 0.476);
+    width: 70%;
+    height: 50%;
 }
 
-.caja header{
-    font-size: 28px;
-    font-weight: 500;
-    text-align: center;
+.card{
+    background: pink;
 }
 
-.caja form{
-    margin: 40px 0 20px 0;
+.form-label{
+    font-size: 25px;
 }
 
-form :where(input, select, button){
-    width: 100%;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-}
-
-form p{
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-form input{
-    height: 50px;
-    font-size: 17px;
-    padding: 0 15px;
-    border: 1px solid grey;
-}
-
-form input:focus{
-    padding: 0 14px;
-    border: 2px solid rgb(136, 0, 255);
-}
-
-form .lista-de-monedas{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-form .tipo-deCambio{
-    font-size: 17px;
-    margin: 20px 0 30px;
-}
-
-form button{
-    height: 52px;
+#btnConversion{
     color: black;
-    background: linear-gradient(to right, white, violet);
-    font-size: 17px;
-    cursor: pointer;
 }
